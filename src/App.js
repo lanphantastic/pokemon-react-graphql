@@ -47,7 +47,7 @@ function App() {
           data.pokemons &&
           data.pokemons.map((pokemon, index) => (
             <div key={index} className="card">
-              <img src={pokemon.image} />
+              <img src={pokemon.image} alt="pokemon" />
               <div class="card-body">
                 <h3>{pokemon.name}</h3>
                 <p>
