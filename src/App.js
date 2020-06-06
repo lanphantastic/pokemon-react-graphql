@@ -1,4 +1,8 @@
 import React from 'react';
+
+import { useQuery } from '@apollo/react-hooks';
+import gql from 'graphql-tag';
+
 import logo from './logo.svg';
 import './App.css';
 
