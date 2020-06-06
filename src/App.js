@@ -6,6 +6,23 @@ import gql from 'graphql-tag';
 import logo from './logo.svg';
 import './App.css';
 
+const GET_POKEMON_INFO = gql`
+  {
+    pokemons(first: 150) {
+      id
+      number
+      name
+      image
+      evolutions {
+        id
+        number
+        name
+        image
+      }
+    }
+  }
+`;
+
 function App() {
   return (
     <div className="App">
